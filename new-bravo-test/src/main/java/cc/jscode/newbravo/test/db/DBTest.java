@@ -1,5 +1,7 @@
 package cc.jscode.newbravo.test.db;
 
+import cc.jscode.newbravo.dao.mapper.MovieDao;
+import cc.jscode.newbravo.model.po.MoviePo;
 import cc.jscode.newbravo.test.config.BaseTestConfig;
 import cc.jscode.newbravo.test.env.ActiveEnvironment;
 import org.junit.Test;
@@ -20,6 +22,9 @@ public class DBTest {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
+    @Autowired
+    private MovieDao dao;
+
     @Test
     public void test1() {
         String sql  = "select * from movie";
@@ -32,4 +37,11 @@ public class DBTest {
         String sql = "insert into movie (name) values('test')";
         jdbcTemplate.update(sql);
     }
+
+    @Test
+    public void test3() {
+        MoviePo po = dao.queryById(1);
+        System.out.println("po = " + po);
+    }
+
 }

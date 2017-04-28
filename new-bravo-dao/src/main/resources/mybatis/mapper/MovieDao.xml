@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cc.jscode.newbravo.dao.mapper.MovieDao">
+
+    <resultMap id="resultMap" type="cc.jscode.newbravo.model.po.MoviePo">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="rate" jdbcType="INTEGER" property="rate" />
+        <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
+        <result column="updated_time" jdbcType="TIMESTAMP" property="updatedTime" />
+        <result column="referrer" jdbcType="VARCHAR" property="referrer" />
+
+    </resultMap>
+
+    <select id="queryById" resultMap="resultMap" >
+      select * from movie where id = #{id, jdbcType=INTEGER}
+    </select>
+
+</mapper>
