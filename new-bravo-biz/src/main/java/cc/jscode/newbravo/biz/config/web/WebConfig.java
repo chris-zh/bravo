@@ -1,4 +1,4 @@
-package cc.jscode.biz.newbravo.biz.config.web;
+package cc.jscode.newbravo.biz.config.web;
 
 import com.alibaba.fastjson.parser.Feature;
 import com.alibaba.fastjson.serializer.SerializerFeature;

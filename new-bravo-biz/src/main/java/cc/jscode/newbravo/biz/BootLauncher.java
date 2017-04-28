@@ -1,4 +1,4 @@
-package cc.jscode.biz.newbravo.biz;
+package cc.jscode.newbravo.biz;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * 启动器
  */
-@SpringBootApplication(scanBasePackages = "cc.jscode.biz")
+@SpringBootApplication(scanBasePackages = "cc.jscode.newbravo")
 public class BootLauncher {
     public static void main(String[] args) {
         SpringApplication springApplication = new SpringApplication(BootLauncher.class);
