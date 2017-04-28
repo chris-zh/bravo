@@ -1,4 +1,4 @@
-package cc.jscode.biz.controller;
+package cc.jscode.biz.newbravo.biz.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;

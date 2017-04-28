@@ -28,6 +28,31 @@
                 <artifactId>spring-boot-autoconfigure</artifactId>
                 <version>1.5.2.RELEASE</version>
             </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.29</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.5</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.16.10</version>
+            </dependency>
+            <dependency>
+                <groupId>com.dangdang</groupId>
+                <artifactId>sharding-jdbc-core</artifactId>
+                <version>1.4.2-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.brevy</groupId>
+                <artifactId>spring-boot-starter-mybatis</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
 
         </dependencies>
 

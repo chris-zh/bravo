@@ -1,4 +1,4 @@
-package cc.jscode.biz;
+package cc.jscode.biz.newbravo.biz;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
