@@ -16,5 +16,21 @@
     <select id="queryById" resultMap="resultMap" >
       select * from movie where id = #{id, jdbcType=INTEGER}
     </select>
+    <select id="queryAll" resultMap="resultMap">
+        SELECT * from movie
+    </select>
+
+    <insert id="insert" parameterType="cc.jscode.newbravo.model.po.MoviePo">
+        insert into movie
+        (name, rate, created_time, updated_time,referrer)
+        values
+        (
+        #{record.name},
+        #{record.rate},
+        now(),
+        now(),
+        #{record.referrer}
+        )
+    </insert>
 
 </mapper>
